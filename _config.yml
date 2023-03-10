@@ -49,8 +49,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  #- title:             Example
-  #  url:               /example/
+  - title:             Example
+    url:               /example/
   #- title:             Documentation
   #  url:               /docs/
   - title:             About
@@ -59,6 +59,9 @@ menu:
     url:               /project/
   - title:             Blog
     url:               /blog/
+    submenu:
+      - title:        Test
+        url:          /test/
   
 
 # Add links to the footer.
@@ -85,8 +88,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+#remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton

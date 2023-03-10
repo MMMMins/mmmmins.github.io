@@ -4,16 +4,8 @@ type: category
 bigtitle: Blog
 sitemap: true
 hide_description: false
-order: 3
+order: 1
 description: >
   블로그 기록 공간
 ---
 
-# Blog
-
-## 카테고리
-
-* [Test]{:.heading.flip-title} --- 테스트
-
-
-[Test]: /blog/test/

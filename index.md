@@ -1,6 +1,9 @@
 ---
-layout: blog
-title: Home
+layout: about
+title: About
+menu: true
+order: 1
 ---
 
-Hi
+<br>
+업데이트 예정
