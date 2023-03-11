@@ -20,7 +20,7 @@ description: >
 sitemap: false
 ---
 
-* [Test]{:.heading.flip-title} --- Test 카테고리
+* [Algorithm]{:.heading.flip-title} --- Algorithm에 대한 기록물
 
 
-[Test]: /test/
+[Algorithm]: /algorithm/
