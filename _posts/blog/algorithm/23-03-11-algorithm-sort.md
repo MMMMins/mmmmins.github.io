@@ -7,10 +7,9 @@ categories:
     - algorithm
 tags:
     - sort
-published: true
 ---
 
-# 나아가기 앞서
+# Sort [1]
 ***정렬의 종류***    
 + 선택 정렬 (Selection Sort)
 + 버블 정렬 (Bubble Sort)
