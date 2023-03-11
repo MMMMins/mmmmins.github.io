@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Sort (1)'
+bigtitle: 'Sort (1)'
 subtitle: 선택, 버블, 삽입 정렬에 대해서
 categories:
     - blog
