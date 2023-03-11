@@ -6,7 +6,7 @@ categories:
     - blog
     - algorithm
 tags:
-    - algorithm
+    - sort
 comments: true
 published: true
 ---
