@@ -8,19 +8,17 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    김민규 (KIM MINGYU,金旼奎) : 온화하고, 밝게 빛나라
     
-    Open `_data/authors.yml` to edit this text.
+    큰 계획은 없습니다. 그래서 다 하는 방법밖에는.
 
   # This photo will be used in the about section
   picture:
-    path:            /assets/img/me.png
+    path:            /assets/img/about.jpeg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/me.png
-      2x:            /assets/img/me.png
+      1x:            /assets/img/about.jpeg
+      2x:            /assets/img/about.jpeg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
