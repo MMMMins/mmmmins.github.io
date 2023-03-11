@@ -17,15 +17,15 @@ url:                   https://mmmmins.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  ko
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 테스트
+title:                 MIN
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Minnnn_ GitHub Blog
+  Minnnn GitHub Blog
 
 # A shorter description for the sidebar.
 tagline:               Minnnn_
