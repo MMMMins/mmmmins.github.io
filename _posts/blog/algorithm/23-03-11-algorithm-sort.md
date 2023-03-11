@@ -1,12 +1,13 @@
 ---
 layout: post
-bigtitle: 'Sort (1)'
+title: 'Sort (1)'
 subtitle: 선택, 버블, 삽입 정렬에 대해서
 categories:
     - blog
     - algorithm
 tags:
     - sort
+comments: true
 published: true
 ---
 

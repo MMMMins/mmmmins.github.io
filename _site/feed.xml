@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR, en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko-KR, en-US" /><updated>2023-03-11T22:55:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIN</title><subtitle>Minnnn GitHub Blog
-</subtitle><author><name>KIM MINGYU</name><email>tommp1055@gmail.com</email></author><entry><title type="html">Sort [1]</title><link href="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/" rel="alternate" type="text/html" title="Sort [1]" /><published>2023-03-11T00:00:00+09:00</published><updated>2023-03-11T22:51:24+09:00</updated><id>http://localhost:4000/blog/algorithm/algorithm-sort</id><content type="html" xml:base="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR, en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko-KR, en-US" /><updated>2023-03-12T00:15:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIN</title><subtitle>Minnnn GitHub Blog
+</subtitle><author><name>KIM MINGYU</name><email>tommp1055@gmail.com</email></author><entry><title type="html">Sort [1]</title><link href="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/" rel="alternate" type="text/html" title="Sort [1]" /><published>2023-03-11T00:00:00+09:00</published><updated>2023-03-11T23:27:44+09:00</updated><id>http://localhost:4000/blog/algorithm/algorithm-sort</id><content type="html" xml:base="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#선택-정렬-selection-sort" id="markdown-toc-선택-정렬-selection-sort">선택 정렬 (Selection Sort)</a>    <ul>
       <li><a href="#0_개요" id="markdown-toc-0_개요">0_개요</a></li>
       <li><a href="#1_-준비하기" id="markdown-toc-1_-준비하기">1_ 준비하기</a></li>
@@ -22,8 +22,10 @@
 <hr />
 <h2 id="0_개요">0_개요</h2>
 <hr />
-<p><strong><em>선택 정렬은 무작위로 배열에서 최솟값만을 찾아서 정렬한다.</em></strong> <br />
-진행할수록 배열의 앞부분은 정렬되고</p>
+<p><strong><em>선택 정렬은 맨 앞의 요소부터 순차적으로 최솟값만을 찾아서 정렬한다.</em></strong> <br />
+선택 정렬은 가장 <strong>단순한 정렬 알고리즘</strong>으로 최악의 효율을 지니고있다. <br />
+<strong>시간복잡도는 n^2</strong>
+진행할수록 배열의 앞쪽요소는 정렬된다.</p>
 
 <h2 id="1_-준비하기">1_ 준비하기</h2>
 <hr />
