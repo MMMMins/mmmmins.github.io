@@ -7,7 +7,6 @@ categories:
     - algorithm
 tags:
     - sort
-comments: true
 published: true
 ---
 
