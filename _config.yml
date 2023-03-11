@@ -87,8 +87,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-#remote_theme: hydecorp/hydejack@v9
+#theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
@@ -228,7 +228,7 @@ hydejack:
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
-  no_break_layout:     true
+  no_break_layout:     false
 
   # Set to `true` to disable the dynamic Table of Contents on large screens.
   no_toc:              false
@@ -253,7 +253,7 @@ hydejack:
   no_breadcrumbs:      false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             true
+  use_lsi:             false
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
