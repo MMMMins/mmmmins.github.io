@@ -11,4 +11,4 @@ sitemap: true
 * [Algorithm]{:.heading.flip-title} --- Algorithm에 대한 기록물
 
 
-[Algorithm]: /algorithm/
+[Algorithm]: /blog/algorithm/
