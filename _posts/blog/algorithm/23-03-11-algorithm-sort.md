@@ -10,10 +10,9 @@ tags:
 published: true
 ---
 
-# Sort [1]
+## Sort [1]
 * toc
 {:toc}   
-23년 2월
 
 ***정렬의 종류***    
 + 선택 정렬 (Selection Sort)
