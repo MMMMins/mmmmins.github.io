@@ -4,9 +4,9 @@ title: 'Sort (1)'
 subtitle: 선택, 버블, 삽입 정렬에 대해서
 categories:
     - blog
-    - algorithms
+    - algorithm
 tags:
-    - sort
+    - algorithm
 comments: true
 published: true
 ---
