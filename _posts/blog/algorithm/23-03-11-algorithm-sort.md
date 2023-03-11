@@ -2,11 +2,11 @@
 layout: post
 title: 'Sort (1)'
 subtitle: 선택, 버블, 삽입 정렬에 대해서
-date: '2023-03-11 18:01:01 +0900'
 categories:
+    - blog
     - algorithms
 tags:
-    - Algorithms
+    - sort
 comments: true
 published: true
 ---
