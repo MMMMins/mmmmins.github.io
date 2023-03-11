@@ -1,6 +1,8 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).
-layout: list
+layout: post
+category: blog
+order: 1
 
 # The title of the tag's page.
 title: Algorithm
