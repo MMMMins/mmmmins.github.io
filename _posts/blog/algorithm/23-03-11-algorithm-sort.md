@@ -10,7 +10,7 @@ tags:
 published: true
 ---
 
-# Sort(1)
+# 나아가기 앞서
 ***정렬의 종류***    
 + 선택 정렬 (Selection Sort)
 + 버블 정렬 (Bubble Sort)
@@ -22,11 +22,13 @@ published: true
 
 # 선택 정렬 (Selection Sort)
 ---
+## 0_개요
+---
 ***선택 정렬은 무작위로 배열에서 최솟값만을 찾아서 정렬한다.***   
 진행할수록 배열의 앞부분은 정렬되고 
 
 
-# 1_ 준비하기
+## 1_ 준비하기
 ---
 ***숫자 1부터 100까지 무작위로 10개 뽑는 코드.py***
 ```python
@@ -42,5 +44,5 @@ while len(num_list) < 10:         # 리스트의 크기가 10개가 될 때까�
     else:
         num_list.append(temp)     # 없다면 리스트에 삽입
 
-print(num_list)
+print(num_list) # 출력값 [52, 54, 12, 2, 43, 8, 86, 20, 68, 71]
 ```
