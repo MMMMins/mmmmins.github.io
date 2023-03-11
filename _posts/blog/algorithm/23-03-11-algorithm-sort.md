@@ -7,9 +7,13 @@ categories:
     - algorithm
 tags:
     - sort
+published: true
 ---
 
 # Sort [1]
+* toc
+{:toc}
+
 ***정렬의 종류***    
 + 선택 정렬 (Selection Sort)
 + 버블 정렬 (Bubble Sort)
