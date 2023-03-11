@@ -59,8 +59,8 @@ menu:
   - title:             Blog
     url:               /blog/
     submenu:
-      - title:        Test
-        url:          /test/
+      - title:        Algorithm
+        url:          /algorithm/
   
 
 # Add links to the footer.
