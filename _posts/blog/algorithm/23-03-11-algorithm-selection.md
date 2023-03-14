@@ -16,7 +16,7 @@ published: true
 {:toc}   
 
 ***정렬의 종류***    
-+ 선택 정렬 (Selection Sort)
++ <span style="color:green;font-weight:bold">선택 정렬 (Selection Sort) - 현재 게시글</span>
 + 버블 정렬 (Bubble Sort)
 + 삽입 정렬 (Insertion Sort)
 + 퀵 정렬 (Quick Sort)

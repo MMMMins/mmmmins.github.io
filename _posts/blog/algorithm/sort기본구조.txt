@@ -1,0 +1,32 @@
+---
+layout: post
+title: '[Sort]삽입정렬 Insertion'
+subtitle: 삽입정렬 Insertion Sort 
+categories:
+    - blog
+    - algorithm
+tags:
+    - sort
+comments: true
+published: true
+---
+
+## [Sort]삽입정렬 Insertion
+* toc
+{:toc}   
+
+***정렬의 종류***    
++ 선택 정렬 (Selection Sort)
++ 버블 정렬 (Bubble Sort)
++ <span style="color:green;font-weight:bold">삽입 정렬 (Insertion Sort) - 현재 게시글</span>
++ 퀵 정렬 (Quick Sort)
++ 병합 정렬 (Merge Sort)
++ 힙 정렬 (Heap Sort)
+<br>
+
+## 0_ 개요
+## 1_ 준비하기
+## 2_ [Code] 삽입정렬
+## 3_ [Debug] 동작설명
+## 4_ [시간복잡도] 번외
+## 5_ 최종코드
