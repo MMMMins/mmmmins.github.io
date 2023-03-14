@@ -9,6 +9,8 @@ sitemap: true
 ---
 # Blog
 * [Algorithm]{:.heading.flip-title} --- Algorithm에 대한 기록물
+* [Code]{:.heading.flip-title} --- Code에 대한 기록물
 
 
 [Algorithm]: /algorithm/
+[Code]: /code/
