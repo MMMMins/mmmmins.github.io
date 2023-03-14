@@ -145,6 +145,7 @@ for j in range(i+1, len(num_list)):
 
 서로 바꿔주기위해 <span style="color:blue;font-weight:bold">19(num_list[2])</span>를 <span style="color:green;font-weight:bold">min_value</span>에 넣어주고 <span style="color:red;font-weight:bold">55(num_list[0])</span>를
 <span style="color:blue;font-weight:bold">19(num_list[2])</span>의 공간에 저장해준다.   
+
 |변수|기존|변경|
 |---|---|---|
 |min_value|-|19|
@@ -154,6 +155,7 @@ for j in range(i+1, len(num_list)):
 <br>
 
 <span style="color:red;font-weight:bold">55(num_list[0])</span>의 위치 에<span style="color:green;font-weight:bold">19(min_value)</span>를 저장해준다.
+
 |변수|기존|변경|
 |---|---|---|
 |min_value|19|-|
