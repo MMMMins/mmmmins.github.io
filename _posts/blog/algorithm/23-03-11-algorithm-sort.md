@@ -152,7 +152,6 @@ for j in range(i+1, len(num_list)):
 |min_list[0]|55|-|
 |num_list[2]|19|55|
 
-<br>
 
 <span style="color:red;font-weight:bold">55(num_list[0])</span>의 위치 에<span style="color:green;font-weight:bold">19(min_value)</span>를 저장해준다.
 
@@ -162,7 +161,6 @@ for j in range(i+1, len(num_list)):
 |num_list[0]|55|19|
 |num_list[2]|-|55|
 
-<br>
 
 > Why, min_value를 사용해야 하나요?
 > > 간단한 예시로 복사 붙여넣기를 생각하면 된다. 두개의 브라우저의 주소를 각각 바꾸려고한다.    
@@ -178,8 +176,63 @@ num_list의 길이를 **50,000**로 설정을 하고 1부터 50,000까지 무작
 
 
 ## 5_ 최종코드
-***
-```python
+
+<details>
+<summary>자바코드</summary>
+
+~~~java
+
+
+import java.util.Random;
+
+public class Selection {
+    public static void main(String[] args) {
+        final int number = 1000;
+        int[] numList = new int[number];
+
+        Random ran = new Random();
+        for(int i=0; i<number; i++){
+            numList[i] = 0;
+        }
+
+        for(int i=0; i<number; i++){
+            int temp = ran.nextInt(number)+1;
+            if(numList[i] == temp){
+                i--;
+            }else if(numList[i] == 0){
+                numList[i] = temp;
+            }
+        }
+        for(int a : numList){
+            System.out.print(a+", ");
+        }
+ 
+        // 정렬 시작 부분
+        System.out.println();
+        for(int i=0; i<number; i++){
+            int minIndex = i;
+            for(int j=i+1; j<number; j++){
+                if(numList[j] < numList[minIndex]){
+                    minIndex = j;
+                }
+            }
+            int minValue = numList[minIndex];
+            numList[minIndex] = numList[i];
+            numList[i] = minValue;
+        }
+
+        for(int b: numList){
+            System.out.print(b+", ");
+        }
+    }
+}
+
+~~~
+
+</details>
+
+
+~~~python
 num_list = []
 while len(num_list) < 10:
     temp = num.randrange(1,101,1)
@@ -198,4 +251,4 @@ for i in range(len(num_list)):
     num_list[min_index] = num_list[i]
     num_list[i] = min_value
 print(num_list)
-```
+~~~
