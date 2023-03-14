@@ -178,15 +178,16 @@ num_list의 길이를 **50,000**로 설정을 하고 1부터 50,000까지 무작
 ## 5_ 최종코드
 
 <details>
-<summary>자바코드</summary>
+<summary>자바코드</summary>   
 
 ~~~java
-
 
 import java.util.Random;
 
 public class Selection {
     public static void main(String[] args) {
+
+        // 랜덤 시작 부분
         final int number = 1000;
         int[] numList = new int[number];
 

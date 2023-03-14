@@ -61,6 +61,8 @@ menu:
     submenu:
       - title:        Algorithm
         url:          /algorithm/
+      - title:        Code
+        url:          /code/
   
 
 # Add links to the footer.
