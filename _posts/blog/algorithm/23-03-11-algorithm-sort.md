@@ -177,7 +177,7 @@ num_list의 길이를 **50,000**로 설정을 하고 1부터 50,000까지 무작
 
 ## 5_ 최종코드
 
-[Java코드 Url](https://mmmmins.github.io/blog/algorithm/2023-03-11-algorithm-sort/)
+
 
 ~~~python
 num_list = []
@@ -199,3 +199,7 @@ for i in range(len(num_list)):
     num_list[i] = min_value
 print(num_list)
 ~~~
+
+## 6_ 자바 Selection Sort 코드
+
+[Java코드](https://mmmmins.github.io/blog/code/2023-03-14-code-sort/)
