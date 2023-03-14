@@ -1,11 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR, en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko-KR, en-US" /><updated>2023-03-14T20:15:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIN</title><subtitle>Minnnn GitHub Blog
-</subtitle><author><name>KIM MINGYU</name><email>tommp1055@gmail.com</email></author><entry><title type="html">[Sort]선택정렬 Selection</title><link href="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/" rel="alternate" type="text/html" title="[Sort]선택정렬 Selection" /><published>2023-03-11T00:00:00+09:00</published><updated>2023-03-14T19:12:36+09:00</updated><id>http://localhost:4000/blog/algorithm/algorithm-sort</id><content type="html" xml:base="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR, en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko-KR, en-US" /><updated>2023-03-14T21:20:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIN</title><subtitle>Minnnn GitHub Blog
+</subtitle><author><name>KIM MINGYU</name><email>tommp1055@gmail.com</email></author><entry><title type="html">[Code]선택정렬 Java</title><link href="http://localhost:4000/blog/code/2023-03-14-code-sort/" rel="alternate" type="text/html" title="[Code]선택정렬 Java" /><published>2023-03-14T00:00:00+09:00</published><updated>2023-03-14T21:17:55+09:00</updated><id>http://localhost:4000/blog/code/code-sort</id><content type="html" xml:base="http://localhost:4000/blog/code/2023-03-14-code-sort/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#자바코드java" id="markdown-toc-자바코드java">자바코드.java</a></li>
+</ul>
+
+<h2 id="자바코드java">자바코드.java</h2>
+<p><strong><em>파이썬과 구조는 같다.</em></strong></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Selection</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="c1">// 랜덤 시작 부분</span>
+        <span class="kd">final</span> <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">;</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numList</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">number</span><span class="o">];</span>
+
+        <span class="nc">Random</span> <span class="n">ran</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Random</span><span class="o">();</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">number</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+            <span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">number</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="n">number</span><span class="o">)+</span><span class="mi">1</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="n">temp</span><span class="o">){</span>
+                <span class="n">i</span><span class="o">--;</span>
+            <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="o">){</span>
+                <span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span> <span class="o">:</span> <span class="n">numList</span><span class="o">){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="s">", "</span><span class="o">);</span>
+        <span class="o">}</span>
+ 
+        <span class="c1">// 정렬 시작 부분</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">number</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+            <span class="kt">int</span> <span class="n">minIndex</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">number</span><span class="o">;</span> <span class="n">j</span><span class="o">++){</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">numList</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">numList</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]){</span>
+                    <span class="n">minIndex</span> <span class="o">=</span> <span class="n">j</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="kt">int</span> <span class="n">minValue</span> <span class="o">=</span> <span class="n">numList</span><span class="o">[</span><span class="n">minIndex</span><span class="o">];</span>
+            <span class="n">numList</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span> <span class="o">=</span> <span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+            <span class="n">numList</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">minValue</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="nl">b:</span> <span class="n">numList</span><span class="o">){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">b</span><span class="o">+</span><span class="s">", "</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>]]></content><author><name>KIM MINGYU</name><email>tommp1055@gmail.com</email></author><category term="blog" /><category term="code" /><category term="sort" /></entry><entry><title type="html">[Sort]선택정렬 Selection</title><link href="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/" rel="alternate" type="text/html" title="[Sort]선택정렬 Selection" /><published>2023-03-11T00:00:00+09:00</published><updated>2023-03-14T20:40:22+09:00</updated><id>http://localhost:4000/blog/algorithm/algorithm-sort</id><content type="html" xml:base="http://localhost:4000/blog/algorithm/2023-03-11-algorithm-sort/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#선택-정렬-selection-sort" id="markdown-toc-선택-정렬-selection-sort">선택 정렬 (Selection Sort)</a>    <ul>
       <li><a href="#0_개요" id="markdown-toc-0_개요">0_개요</a></li>
       <li><a href="#1_-준비하기" id="markdown-toc-1_-준비하기">1_ 준비하기</a></li>
       <li><a href="#2_-code-선택정렬" id="markdown-toc-2_-code-선택정렬">2_ [Code] 선택정렬</a></li>
       <li><a href="#3_-debug-동작설명" id="markdown-toc-3_-debug-동작설명">3_ [Debug] 동작설명</a></li>
-      <li><a href="#4_-번외-시간복잡도" id="markdown-toc-4_-번외-시간복잡도">4_ 번외 (시간복잡도)</a></li>
+      <li><a href="#4_-시간복잡도-번외" id="markdown-toc-4_-시간복잡도-번외">4_ [시간복잡도] 번외</a></li>
       <li><a href="#5_-최종코드" id="markdown-toc-5_-최종코드">5_ 최종코드</a></li>
     </ul>
   </li>
@@ -243,65 +297,13 @@
   </blockquote>
 </blockquote>
 
-<h2 id="4_-번외-시간복잡도">4_ 번외 (시간복잡도)</h2>
-<p>개요에서 말했듯이 시간복잡도는 모든 결과가 <strong>n^2</strong>이다. <br />
+<h2 id="4_-시간복잡도-번외">4_ [시간복잡도] 번외</h2>
+<p>개요에서 말했듯이 시간복잡도는 최선, 평균, 최악이 모두가 <strong>n^2</strong>이다. <br />
 num_list의 길이를 <strong>50,000</strong>로 설정을 하고 1부터 50,000까지 무작위 수를 정렬할때 걸린 시간은 <span style="color:red;font-weight:bold">71.77786 sec</span>이다. 이것보다 더 오래 걸릴 수도 있고, 낮은 수의 요소들이 앞쪽에 배치되어있다면 이것보다 덜 걸릴 수도있다.</p>
 
 <h2 id="5_-최종코드">5_ 최종코드</h2>
 
-<details>
-<summary>자바코드</summary>
-
-~~~java
-
-
-import java.util.Random;
-
-public class Selection {
-    public static void main(String[] args) {
-        final int number = 1000;
-        int[] numList = new int[number];
-
-        Random ran = new Random();
-        for(int i=0; i&lt;number; i++){
-            numList[i] = 0;
-        }
-
-        for(int i=0; i&lt;number; i++){
-            int temp = ran.nextInt(number)+1;
-            if(numList[i] == temp){
-                i--;
-            }else if(numList[i] == 0){
-                numList[i] = temp;
-            }
-        }
-        for(int a : numList){
-            System.out.print(a+", ");
-        }
- 
-        // 정렬 시작 부분
-        System.out.println();
-        for(int i=0; i&lt;number; i++){
-            int minIndex = i;
-            for(int j=i+1; j&lt;number; j++){
-                if(numList[j] &lt; numList[minIndex]){
-                    minIndex = j;
-                }
-            }
-            int minValue = numList[minIndex];
-            numList[minIndex] = numList[i];
-            numList[i] = minValue;
-        }
-
-        for(int b: numList){
-            System.out.print(b+", ");
-        }
-    }
-}
-
-~~~
-
-</details>
+<p><a href="https://mmmmins.github.io/blog/algorithm/2023-03-11-algorithm-sort/">Java코드 Url</a></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">while</span> <span class="nf">len</span><span class="p">(</span><span class="n">num_list</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>

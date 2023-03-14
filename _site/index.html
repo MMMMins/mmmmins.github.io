@@ -109,7 +109,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-03-14T20:15:25+09:00',
+    INDEX_KEY: 'index--2023-03-14T21:20:34+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -362,49 +362,85 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </div>
 
   <nav class="sidebar-nav heading" role="navigation">
-    <span class="sr-only">Navigation:</span>
+    <!--네비게이션바에 메뉴선정-->
+<span class="sr-only">Navigation:</span>
 <ul>
-  
-    
-      
+      <!-- 메뉴 각각을 식별하기위한 인덱스 -->
       <li>
-        <a
-          id="_drawer--opened"
-          href="/about/"
-          class="sidebar-nav-item "
-          
-        >
-          About
-        </a>
+        <div class="menu-wrapper" onmouseover="javascript:spread(9)" onmouseout="javascript:spread(9)">
+           <!-- submenu 변수는 _config.yml 에서 추가합니다 -->          
+          <a
+            id="_drawer--opened"
+            href="/about/"
+            class="sidebar-nav-item "
+            >
+            About
+          </a>
+       </div>
       </li>
     
       
+      <!-- 메뉴 각각을 식별하기위한 인덱스 -->
       <li>
-        <a
-          
-          href="/project/"
-          class="sidebar-nav-item "
-          
-        >
-          Project
-        </a>
+        <div class="menu-wrapper" onmouseover="javascript:spread(10)" onmouseout="javascript:spread(10)">
+           <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
+          <a
+            href="/project/"
+            class="sidebar-nav-item "
+            >
+            Project
+          </a>
+       </div>
       </li>
     
       
+      <!-- 메뉴 각각을 식별하기위한 인덱스 -->
+      
       <li>
-        <a
+        <div class="menu-wrapper" onmouseover="javascript:spread(12)" onmouseout="javascript:spread(12)">
+           <!-- submenu 변수는 _config.yml 에서 추가합니다 -->
           
-          href="/blog/"
-          class="sidebar-nav-item "
+            <!-- spread 함수는 js 파일로 작성하고 my-head.html에 추가합니다 -->
+            <!-- spread-btn class는 my-style.scss에 추가합니다. -->
+          <button class="spread-btn">
+                <!-- marterial stylesheet를 my-head.html에 추가합니다 -->
+              <span id="spread-icon-12" class="material-icons">arrow_right</span>
+          </button>
           
-        >
-          Blog
-        </a>
+          <a
+            
+            href="/blog/"
+            class="sidebar-nav-item "
+            
+            >
+            Blog
+          </a>
+        
+          
+          <div id="submenu-12" class="menu-wrapper submenu hide">
+            <ul style="list-style: none;">
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/algorithm/"
+                  >
+                  Algorithm
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/code/"
+                  >
+                  Code
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+       </div>
       </li>
-    
-  
 </ul>
-
   </nav>
 
   

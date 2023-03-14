@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '[Code]선택정렬 Java'
-subtitle: [Code]선택정렬 Java 
+subtitle: Code 선택정렬 Java
 categories:
     - blog
     - code
