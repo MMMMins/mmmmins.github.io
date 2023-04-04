@@ -63,6 +63,8 @@ menu:
         url:          /algorithm/
       - title:        Code
         url:          /code/
+      - title:        CodingTest
+        url:          /codingtest/
   
 
 # Add links to the footer.
