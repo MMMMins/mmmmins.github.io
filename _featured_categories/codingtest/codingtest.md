@@ -2,7 +2,7 @@
 # Featured tags need to have either the `list` or `grid` layout (PRO only).
 layout: list
 category: blog
-order: 2
+order: 3
 
 # The title of the tag's page.
 title: CodingTest
