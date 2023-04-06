@@ -91,14 +91,5 @@ def sort(num_list):
 
 <br>
 
-***3-2) 두번째 반복문 : j는 i부터 0이 될때까지 반복***
-```python
-    for j in range(i,0,-1):
-        if num_list[j-1] > num_list[j]: 
-                temp = num_list[j-1]
-                num_list[j-1] = num_list[j]
-                num_list[j] = temp
-```
-
 ## 4_ [시간복잡도] 번외
 ## 5_ 최종코드
