@@ -71,5 +71,86 @@ def sort(num_list):
     print(num_list)
 ~~~
 ## 3_ [Debug] 동작설명
+***3-0) num_list[10]***
+
+|0|1|2|3|4|5|6|7|8|9|
+|---|---|---|---|---|---|---|---|---|---|
+|33|55|19|37|4|48|56|26|61|79|
+
+> 첫번째 줄 인덱스, 두번째 줄 무작위 요소   
+> 맨 처음 실행시 0번 요소부터 시작.   
+> **위의 표는 무작위 10개의 난수로 위 코드 실행 시 다를 수 있습니다.**
+
+<br>
+
+***3-1) 첫번째 반복문 : i는 1부터 num_list의 크기(<10)까지 반복***
+```python
+    for i in range(1, len(num_list)):
+```
+> Why? i는 0번부터가 아닌 1번부터하는 이유는 두번째 반복문에서 j는 i의 값을 할당받는데, 이후 조건 처리시 이전 요소와 비교를 하기 때문에 1번부터한다.
+
+<br>
+
+***3-2) 두번째 반복문 : j는 i부터 0이 될때까지 반복***
+```python
+    for j in range(i,0,-1):
+        if num_list[j-1] > num_list[j]: 
+                temp = num_list[j-1]
+                num_list[j-1] = num_list[j]
+                num_list[j] = temp
+```
+**설명**   
+1. i[len:10] 에서부터 0이 될때까지 반복한다.
+2. **num_list[j-1] > num_list[j]** 이는   
+    2-0. i는 1번부터 num_list의 크기만큼 시작하므로 0번째 공간비교를 위해 -1을 해준다.
+    2-1. **num_list[0] > num_list[1]** 즉,   
+    2-2. **33 > 55** 이와 같다.
+3. 2-2 결과가 **<span style="color:red">False</span>** 이므로 다시 두번째 반복문으로 시작한다.
+4. 조건이 될 때까지 반복문은 감소하며 계속 실행이 되므로 j는 1씩 감소하여
+5. **num_list[j-1] < num_list[j]** 이는
+    5-1. **num_list[1] < num_list[2]** 즉,   
+    5-2. **19 < 33** 이와 같다.
+6. 5-2 결과가 **<span style="color:blue">True</span>** 이므로 현재 j의 위치를 min_index에 저장해준다.
+7. 위와같이 num_list의 길이만큼 반복한다.
+.
+
+<br>
+
+***3-3) 두번째 반복문이 끝난 후, 최솟값의 위치와 현재 i의 위치를 이용하여 서로 값을 바꿔준다.***
+```python
+        min_value = num_list[min_index] 
+        num_list[min_index] = num_list[i]
+        num_list[i] = min_value
+```
+**설명**   
+<span style="color:red;font-weight:bold">num_list[0]</span>에는 <span style="color:red;font-weight:bold">55</span>가 들어있고 <span style="color:blue;font-weight:bold">num_list[2]</span>에는 <span style="color:blue;font-weight:bold">19</span>가 들어있다.
+
+서로 바꿔주기위해 <span style="color:blue;font-weight:bold">19(num_list[2])</span>를 <span style="color:green;font-weight:bold">min_value</span>에 넣어주고 <span style="color:red;font-weight:bold">55(num_list[0])</span>를
+<span style="color:blue;font-weight:bold">19(num_list[2])</span>의 공간에 저장해준다.   
+
+|변수|기존|변경|
+|---|---|---|
+|min_value|-|19|
+|min_list[0]|55|-|
+|num_list[2]|19|55|
+
+
+<span style="color:red;font-weight:bold">55(num_list[0])</span>의 위치 에<span style="color:green;font-weight:bold">19(min_value)</span>를 저장해준다.
+
+|변수|기존|변경|
+|---|---|---|
+|min_value|19|-|
+|num_list[0]|55|19|
+|num_list[2]|-|55|
+
+
+> Why, min_value를 사용해야 하나요?
+> > 간단한 예시로 복사 붙여넣기를 생각하면 된다. 두개의 브라우저의 주소를 각각 바꾸려고한다.    
+크롬에는 <span style="color:red;font-weight:bold">A주소</span>를 
+<span style="color:blue;font-weight:bold">B주소</span>로, 
+사파리에는 <span style="color:blue;font-weight:bold">B주소</span>를 
+<span style="color:red;font-weight:bold">A주소</span>로 바꾸려고할 때,   
+<span style="color:blue;font-weight:bold">B주소</span>를 복사한 채로 크롬에 붙여 넣게되면, <span style="color:red;font-weight:bold">A주소</span>가 사라져버린다. 반대로 해도 결과는 똑같으므로 메모장 같은 곳에 <span style="color:green;font-weight:bold">한개의 주소</span>를 붙여넣고 처리를 하면 원래의 목적대로 이룰 수 있는 것과 같이, min_value의 사용 이유도 같다.
+
 ## 4_ [시간복잡도] 번외
 ## 5_ 최종코드
