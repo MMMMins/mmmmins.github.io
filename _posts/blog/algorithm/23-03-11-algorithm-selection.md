@@ -18,11 +18,13 @@ published: true
 ***정렬의 종류***    
 + <span style="color:green;font-weight:bold">선택 정렬 (Selection Sort) - 현재 게시글</span>
 + 버블 정렬 (Bubble Sort)
-+ 삽입 정렬 (Insertion Sort)
++ [삽입 정렬 (Insertion Sort)]
 + 퀵 정렬 (Quick Sort)
 + 병합 정렬 (Merge Sort)
 + 힙 정렬 (Heap Sort)
 <br>
+
+[삽입 정렬 (Insertion Sort)]: https://mmmmins.github.io/blog/algorithm/2023-03-14-algorithm-insertion/
 
 # 선택 정렬 (Selection Sort)
 ---
